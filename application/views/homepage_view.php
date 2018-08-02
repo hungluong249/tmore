@@ -532,7 +532,7 @@
 				</h1>
 
                 <?php
-                echo form_open_multipart('', array('class' => 'form-horizontal'));
+                echo form_open_multipart('homepage/get_data_to_send_mail', array('class' => 'form-horizontal'));
                 ?>
 
 				<div class="row">
