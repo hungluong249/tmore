@@ -9,6 +9,10 @@ class Homepage extends CI_Controller {
     public function index()
     {
         $data['the_view_content'] = 'homepage_view';
+
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
         $this->load->view('templates/master_view', $data);
     }
 
