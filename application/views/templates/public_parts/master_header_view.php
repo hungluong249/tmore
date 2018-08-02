@@ -10,6 +10,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>TMORE</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/png" href="<?php echo site_url('assets/img/favicon.png') ?>"/>
+
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="<?php echo site_url('assets/') ?>lib/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
@@ -39,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</a>
 		</div>
 		<div class="item visible-xs" id="expand-nav">
-			<a href="" class="btn-nav-expand" role="button" id="btn-nav-expand">
+			<a class="btn-nav-expand" role="button" id="btn-nav-expand">
 				<span class="nav-icon"></span>
 			</a>
 		</div>

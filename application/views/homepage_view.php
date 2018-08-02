@@ -3,12 +3,12 @@
 <section class="section" id="cover">
 	<div class="container-fluid">
 
-		<div id="canvas">
+		<div id="canvas" class="hidden-xs">
 			<div class="mask">
 				<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9be45969a82da44b4d8a8d6283d3a2a2&auto=format&fit=crop&w=634&q=80" alt="image cover">
 			</div>
 		</div>
-		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+		<svg class="hidden-xs" viewBox="0 0 100 100" preserveAspectRatio="none">
 			<polygon points="0,0 20,0 0,100" fill="#fff"></polygon>
 		</svg>
 
@@ -27,7 +27,7 @@
 						</li>
 					</ul>
 					<div class="row">
-						<div class="col-sm-6 col-xs-12">
+						<div class="item col-md-6 col-xs-12">
 							<a href="" class="link" target="_blank">
 								<span class="fa-stack fa-lg">
 									<i class="fa fa-circle-o fa-stack-2x"></i>
@@ -36,7 +36,7 @@
 							</a>
 						</div>
 
-						<div class="col-sm-6 col-xs-12">
+						<div class="item col-md-6 col-xs-12">
 							Hotline
 							<h1 class="big-heading">
 								088.828.9922
@@ -55,7 +55,7 @@
 <section class="section" id="about">
 	<div class="container">
 		<div class="row">
-			<div class="item col-sm-3 col-xs-12">
+			<div class="item col-md-3 col-sm-6 col-xs-12">
 				<div class="left">
 					<i class="fa fa-calendar" aria-hidden="true"></i>
 				</div>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-3 col-xs-12">
+			<div class="item col-md-3 col-sm-6 col-xs-12">
 				<div class="left">
 					<i class="fa fa-users" aria-hidden="true"></i>
 				</div>
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-3 col-xs-12">
+			<div class="item col-md-3 col-sm-6 col-xs-12">
 				<div class="left">
 					<i class="fa fa-heart-o" aria-hidden="true"></i>
 				</div>
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-3 col-xs-12">
+			<div class="item col-md-3 col-sm-6 col-xs-12">
 				<div class="left">
 					<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 				</div>
@@ -114,7 +114,7 @@
 		</div>
 
 		<div class="row body">
-			<div class="left col-sm-3 col-xs-12">
+			<div class="left col-md-3 col-xs-12">
 				<div class="item wow fadeInUp" data-wow-delay="0.0s">
 					<img src="<?php echo site_url('assets/img/icon/receipt.png') ?>" alt="benefit 01">
 					<p class="paragraph">
@@ -137,11 +137,11 @@
 				</div>
 			</div>
 
-			<div class="center col-sm-6 col-xs-12">
+			<div class="center col-md-6 col-sm-12 hidden-xs">
 				<img class="wow fadeInUp" src="<?php echo site_url('assets/img/benefit.png') ?>">
 			</div>
 
-			<div class="right col-sm-3 col-xs-12">
+			<div class="right col-md-3 col-sm-12 col-xs-12">
 				<div class="item wow fadeInUp" data-wow-delay="0.6s">
 					<img src="<?php echo site_url('assets/img/icon/premium.png') ?>" alt="benefit 04">
 					<p class="paragraph">
@@ -185,7 +185,7 @@
                 ?>
 
 				<?php for ($key = 0; $key < count($value); $key++){ ?>
-					<div class="item col-sm-4 col-xs-12">
+					<div class="item col-md-4 col-sm-6 col-xs-12">
 						<div class="number">
 							<span class="big-number">
 								<?php echo '0' . ($key+1) ?>
@@ -206,7 +206,7 @@
 <section class="section" id="highlight">
 	<div class="container">
 		<div class="row">
-			<div class="item col-sm-4 col-xs-12" id="cover">
+			<div class="item col-md-4 col-xs-12" id="cover">
 				<div class="inner">
 					<h1 class="big-heading">
 						MỘT BUỔI HỌC CỦA CHÚNG TÔI CÓ GÌ ĐẶC BIỆT?
@@ -214,7 +214,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-8 col-xs-12">
+			<div class="item col-md-8 col-xs-12">
 				<div class="mask">
 					<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89c21e12da5a1c16539ae341645fb184&auto=format&fit=crop&w=1350&q=80" alt="image highlight 01">
 
@@ -229,7 +229,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-6 col-xs-12">
+			<div class="item col-md-6 col-xs-12">
 				<div class="mask">
 					<img src="https://images.unsplash.com/photo-1528791914202-a957a59c7534?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7be45755104b70e39ff8e6013a603653&auto=format&fit=crop&w=1351&q=80" alt="image highlight 02">
 
@@ -244,7 +244,7 @@
 				</div>
 			</div>
 
-			<div class="item col-sm-6 col-xs-12">
+			<div class="item col-md-6 col-xs-12">
 				<div class="mask">
 					<img src="https://images.unsplash.com/photo-1529729452430-d35a0213b820?ixlib=rb-0.3.5&s=0b6a987f6413de522ed747a9a7a0bc26&auto=format&fit=crop&w=675&q=80" alt="image highlight 03">
 
@@ -448,13 +448,13 @@
 			</div>
 		</div>
 		<div class="row body">
-			<div class="left col-sm-6 col-xs-12">
+			<div class="left col-md-6 col-xs-12">
 				<div class="mask">
 					<img src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-0.3.5&s=8bcd2fa5ab3473d601f3d3bd2fe1228d&auto=format&fit=crop&w=634&q=80" alt="prive cover">
 				</div>
 			</div>
 
-			<div class="right col-sm-6 col-xs-12">
+			<div class="right col-md-6 col-xs-12">
 				<div class="table-responsive">
 					<table class="table">
 						<tbody>
@@ -512,7 +512,7 @@
 <section class="section" id="register">
 	<div class="container">
 		<div class="row">
-			<div class="left col-sm-4 col-xs-12">
+			<div class="left col-md-4 col-xs-12">
 				<h1 class="big-heading">
 					TẠI SAO<br>NÊN LỰA CHỌN TMORE ?
 				</h1>
@@ -526,7 +526,7 @@
 				</ol>
 			</div>
 
-			<div class="right col-sm-8 col-xs-12">
+			<div class="right col-md-8 col-xs-12">
 				<h1 class="big-heading">
 					ĐĂNG KÝ NGAY<br>ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ
 				</h1>
@@ -543,14 +543,14 @@
                         ?>
 					</div>
 
-					<div class="form-group col-sm-6 col-xs-12">
+					<div class="form-group col-md-6 col-xs-12">
                         <?php
                         echo form_error('register_mail');
                         echo form_input('register_mail', set_value('register_mail'), 'class="form-control" id="register_mail" placeholder="Nhập Email của bạn (*)"');
                         ?>
 					</div>
 
-					<div class="form-group col-sm-6 col-xs-12">
+					<div class="form-group col-md-6 col-xs-12">
                         <?php
                         echo form_error('register_phone');
                         echo form_input('register_phone', set_value('register_phone'), 'class="form-control" id="register_phone" placeholder="Nhập số điện thoại của bạn (*)"');
@@ -607,7 +607,7 @@
 			nav: true,
 			margin: 30,
 			responsiveClass: true,
-			reponsive: {
+			responsive: {
 			    0: {
 			        items: 1,
                     loop: true

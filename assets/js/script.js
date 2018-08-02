@@ -1,15 +1,8 @@
 $(document).ready(function(){
    'use strict';
-
-   var stepInnerWidthBrand = $('#brand .step .inner').width();
-    var stepInnerWidthPublisher = $('#publisher .step .inner').width();
-    var partnerHeight = $('#partners .row .item .inner').width();
-
-   $('#brand .step .inner').css('height' , stepInnerWidthBrand);
-    $('#publisher .step .inner').css('height' , stepInnerWidthPublisher);
-    $('#partners .row .item .inner').css('height' , partnerHeight);
-
-    $(window).scroll(function () {
+   
+   
+   $(window).scroll(function () {
         //if you hard code, then use console
         //.log to determine when you want the
         //nav bar to stick.
@@ -22,9 +15,33 @@ $(document).ready(function(){
         if ($(window).scrollTop() === 0) {
             $('header').removeClass('active');
         }
+   });
+    
+    // NAV Expand
+    
+    var navStatus = 0;
+    
+    $('#btn-nav-expand').click(function(){
+        if(navStatus == 0){
+            $('#btn-nav-expand').addClass('active');
+            $('#nav-main').animate({
+                left : '0'
+            },500);
+            
+            navStatus = 1;
+        }
+        
+        else{
+            $('#btn-nav-expand').removeClass('active');
+            $('#nav-main').animate({
+                left : '-80%'
+            },500);
+            
+            navStatus = 0;
+        }
     });
 
-    $("header a, .cover a").on('click', function(event) {
+   $("header a, .cover a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
@@ -44,7 +61,7 @@ $(document).ready(function(){
                 window.location.hash = hash;
             });
         } // End if
-    });
+   });
 });
 
 

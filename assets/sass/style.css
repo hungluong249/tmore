@@ -70,6 +70,30 @@ a.link {
     color: #333; }
 
 /*
+=========================================
+SMALL DESKTOP (Under 1600px)
+=========================================
+ */
+@media (max-width: 1600px) and (min-width: 992px) {
+  h1.big-heading {
+    font-size: 2.25em; } }
+/*
+=========================================
+TABLETS (Under 992px)
+=========================================
+ */
+@media (max-width: 992px) and (min-width: 768px) {
+  p.paragraph {
+    font-size: 1.5em; } }
+/*
+=========================================
+MOBILE (Under 992px)
+=========================================
+ */
+@media (max-width: 768px) {
+  h1.big-heading {
+    font-size: 2.5em; } }
+/*
 RESET BOOTSTRAP
 
 AUTHOR: hung.luong@matocreative.vn
@@ -99,27 +123,27 @@ header {
   top: 0;
   left: 0;
   z-index: 1011;
-  -webkit-transition: all ease-in-out 500ms;
-  -moz-transition: all ease-in-out 500ms;
-  -ms-transition: all ease-in-out 500ms;
-  -o-transition: all ease-in-out 500ms;
-  transition: all ease-in-out 500ms; }
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 300ms;
+  -ms-transition: all ease-in-out 300ms;
+  -o-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms; }
   header .container {
     margin-top: 40px;
-    -webkit-transition: all ease-in-out 500ms;
-    -moz-transition: all ease-in-out 500ms;
-    -ms-transition: all ease-in-out 500ms;
-    -o-transition: all ease-in-out 500ms;
-    transition: all ease-in-out 500ms; }
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms; }
     header .container .item {
       display: inline-block; }
       header .container .item#logo img {
         width: 100px;
-        -webkit-transition: all ease-in-out 500ms;
-        -moz-transition: all ease-in-out 500ms;
-        -ms-transition: all ease-in-out 500ms;
-        -o-transition: all ease-in-out 500ms;
-        transition: all ease-in-out 500ms; }
+        -webkit-transition: all ease-in-out 300ms;
+        -moz-transition: all ease-in-out 300ms;
+        -ms-transition: all ease-in-out 300ms;
+        -o-transition: all ease-in-out 300ms;
+        transition: all ease-in-out 300ms; }
       header .container .item#expand-nav #btn-nav-expand {
         float: right;
         margin-top: 60px;
@@ -219,6 +243,83 @@ header {
       header.active .container .item#nav-main ul li .btn-primary {
         padding: 5px 20px; }
 
+/*
+=========================================
+SMALL DESKTOP (Under 1600px)
+=========================================
+ */
+@media (max-width: 1600px) and (min-width: 992px) {
+  header .container {
+    margin-top: 25px; } }
+/*
+=========================================
+TABLETS (Under 992px)
+=========================================
+ */
+@media (max-width: 992px) and (min-width: 768px) {
+  header .container .item#nav-main ul li {
+    padding: 0 15px; } }
+/*
+=========================================
+MOBILE (Under 768px)
+=========================================
+ */
+@media (max-width: 768px) {
+  header .container {
+    margin-top: 20px; }
+    header .container .item#expand-nav {
+      width: 100px;
+      height: 100px;
+      float: right;
+      -webkit-transform: translateY(-15px);
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -o-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-transition: all ease-in-out 300ms;
+      -moz-transition: all ease-in-out 300ms;
+      -ms-transition: all ease-in-out 300ms;
+      -o-transition: all ease-in-out 300ms;
+      transition: all ease-in-out 300ms; }
+    header .container .item#nav-main {
+      width: 80%;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background: #58c6bc;
+      background: -moz-linear-gradient(-45deg, #58c6bc 0%, #eeb756 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, #58c6bc), color-stop(100%, #eeb756));
+      background: -webkit-linear-gradient(-45deg, #58c6bc 0%, #eeb756 100%);
+      background: -o-linear-gradient(-45deg, #58c6bc 0%, #eeb756 100%);
+      background: -ms-linear-gradient(-45deg, #58c6bc 0%, #eeb756 100%);
+      background: linear-gradient(135deg, #58c6bc 0%, #eeb756 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4625', endColorstr='#f2ab1e', GradientType=1 );
+      height: 100vh; }
+      header .container .item#nav-main ul {
+        padding-top: 50px;
+        padding-left: 15px; }
+        header .container .item#nav-main ul li {
+          display: block;
+          margin-bottom: 15px; }
+          header .container .item#nav-main ul li a {
+            font-size: 1.75em !important;
+            color: #eaeaea; }
+            header .container .item#nav-main ul li a:hover {
+              color: #fff; }
+  header.active .container .item#expand-nav {
+    width: 50px;
+    height: 50px;
+    float: right;
+    -webkit-transform: translateY(-35px);
+    -moz-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    -o-transform: translateY(-35px);
+    transform: translateY(-35px);
+    -webkit-transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -ms-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms; } }
 /*
 MAIN STYLE OF SITE
 
@@ -569,6 +670,125 @@ section#register {
     section#register .container .row .right .form-horizontal .form-group label {
       color: #999; }
 
+/*
+=========================================
+SMALL DESKTOP (Under 1600px)
+=========================================
+ */
+@media (max-width: 1600px) and (min-width: 992px) {
+  section.section {
+    padding-top: 75px;
+    padding-bottom: 75px; }
+  section#cover .container ul {
+    margin-top: 30px; }
+    section#cover .container ul li {
+      padding-bottom: 15px; }
+  section#about .row .item .left i {
+    font-size: 2.5em; }
+  section#commitment .container-fluid .container .row.head {
+    margin-bottom: 30px; }
+  section#commitment .container-fluid .container .row.body .item .number .big-number {
+    font-size: 7em; }
+  section#commitment .container-fluid .container .row.body .item .number .content {
+    top: 80px;
+    left: 60px; }
+  section#hot-drink {
+    padding-bottom: 25px; }
+  section#tools {
+    padding-top: 25px; } }
+/*
+=========================================
+TABLETS (Under 992px)
+=========================================
+ */
+@media (max-width: 992px) and (min-width: 768px) {
+  section.section {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  section#cover .container ul {
+    display: none; }
+  section#cover .container .row {
+    margin-top: 50px; }
+    section#cover .container .row .item {
+      margin-bottom: 30px; }
+  section#benefit .container .row.body {
+    display: flex;
+    flex-direction: column; }
+    section#benefit .container .row.body .center {
+      order: 1;
+      text-align: center; }
+    section#benefit .container .row.body .left {
+      order: 2; }
+    section#benefit .container .row.body .right {
+      order: 3; }
+    section#benefit .container .row.body .item {
+      text-align: center;
+      padding-left: 150px;
+      padding-right: 150px; }
+  section#commitment .container-fluid .container .row.head {
+    margin-bottom: 30px; }
+  section#commitment .container-fluid .container .row.body .item .number .content {
+    font-size: 1.5em; }
+  section#content {
+    height: 130vh; }
+    section#content .container .row.body .grid .grid-sizer, section#content .container .row.body .grid .grid-item {
+      width: 50%; }
+  section#price .container .row.body .left {
+    margin-bottom: 30px; }
+  section#price .container .row.body .right table tr td {
+    font-size: 1.5em; }
+  section#price .container .row.body .right .btn-primary {
+    font-size: 1.5em; }
+  section#register .container .row .left ol li {
+    font-size: 1.5em; }
+  section#register .container .row .right .form-horizontal .form-group .form-control {
+    font-size: 1.5em;
+    padding: 35px 0; }
+  section#register .container .row .right .btn-primary {
+    font-size: 1.5em; } }
+/*
+=========================================
+MOBILE (Under 768px)
+=========================================
+ */
+@media (max-width: 768px) {
+  section.section {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  section#cover .container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px; }
+    section#cover .container ul {
+      display: none; }
+    section#cover .container .row {
+      margin-top: 50px; }
+      section#cover .container .row .item {
+        margin-bottom: 30px; }
+  section#about .row .item {
+    margin-bottom: 15px; }
+    section#about .row .item .left {
+      width: 100px;
+      margin-left: 30px; }
+  section#commitment .container-fluid {
+    height: 150vh; }
+    section#commitment .container-fluid .background {
+      width: 100%; }
+    section#commitment .container-fluid .container {
+      width: 100%; }
+      section#commitment .container-fluid .container .row.body .item .number .big-number {
+        font-size: 5.5em; }
+      section#commitment .container-fluid .container .row.body .item .number .content {
+        top: 40px;
+        left: 30px; }
+  section#highlight .container .row .item {
+    height: 300px; }
+  section#content {
+    height: 230vh; }
+    section#content .container {
+      width: 100%; }
+      section#content .container .row.body .grid .grid-sizer, section#content .container .row.body .grid .grid-item {
+        width: 100%; } }
 /*
 FOOTER
  */

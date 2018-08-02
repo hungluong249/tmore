@@ -639,3 +639,341 @@ section{
     }
 }
 
+/*
+=========================================
+SMALL DESKTOP (Under 1600px)
+=========================================
+ */
+
+@media (max-width: 1600px) and (min-width: 992px){
+    section{
+        &.section{
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        &#cover{
+            .container{
+                ul{
+                    margin-top: 30px;
+
+                    li{
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        &#about{
+            .row{
+                .item{
+                    .left{
+                        i{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#commitment{
+            .container-fluid{
+                .container{
+                    .row{
+                        &.head{
+                            margin-bottom: 30px;
+                        }
+
+                        &.body{
+                            .item{
+                                .number{
+                                    .big-number{
+                                        font-size: 7em;
+                                    }
+
+                                    .content{
+                                        top: 80px;
+                                        left: 60px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#hot-drink{
+            padding-bottom: 25px;
+        }
+
+        &#tools{
+            padding-top: 25px;
+        }
+    }
+}
+
+/*
+=========================================
+TABLETS (Under 992px)
+=========================================
+ */
+
+@media (max-width: 992px) and (min-width: 768px) {
+    section{
+        &.section{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        &#cover{
+            .container{
+                ul{
+                    display: none;
+                }
+
+                .row{
+                    margin-top: 50px;
+
+                    .item{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        &#benefit{
+            .container{
+                .row{
+                    &.body{
+                        display: flex;
+                        flex-direction: column;
+
+                        .center{
+                            order: 1;
+
+                            text-align: center;
+                        }
+
+                        .left{
+                            order: 2;
+                        }
+
+                        .right{
+                            order: 3;
+                        }
+
+                        .item{
+                            text-align: center;
+                            padding-left: 150px;
+                            padding-right: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &#commitment{
+            .container-fluid{
+                .container{
+                    .row{
+                        &.head{
+                            margin-bottom: 30px;
+                        }
+
+                        &.body{
+                            .item{
+                                .number{
+                                    .content{
+                                        font-size: 1.5em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#content{
+            height: 130vh;
+
+            .container{
+                .row{
+                    &.body{
+                        .grid{
+                            .grid-sizer, .grid-item{
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#price{
+            .container{
+                .row{
+                    &.body{
+                        .left{
+                            margin-bottom: 30px;
+                        }
+
+                        .right{
+                            table{
+                                tr{
+                                    td{
+                                        font-size: 1.5em;
+                                    }
+                                }
+                            }
+
+                            .btn-primary{
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#register{
+            .container{
+                .row{
+                    .left{
+                        ol{
+                            li{
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+
+                    .right{
+                        .form-horizontal{
+                            .form-group{
+                                .form-control{
+                                    font-size: 1.5em;
+
+                                    padding: 35px 0;
+                                }
+                            }
+                        }
+
+                        .btn-primary{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+=========================================
+MOBILE (Under 768px)
+=========================================
+ */
+
+@media (max-width: 768px){
+    section {
+        &.section {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &#cover {
+            .container {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                ul {
+                    display: none;
+                }
+
+                .row {
+                    margin-top: 50px;
+
+                    .item {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        &#about{
+            .row{
+                .item{
+                    margin-bottom: 15px;
+
+                    .left{
+                        width: 100px;
+
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+        &#commitment{
+            .container-fluid{
+                height: 150vh;
+
+                .background{
+                    width: 100%;
+                }
+
+                .container{
+                    width: 100%;
+
+                    .row{
+                        &.body{
+                            .item{
+                                .number{
+                                    .big-number{
+                                        font-size: 5.5em;
+                                    }
+
+                                    .content{
+                                        top: 40px;
+                                        left: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &#highlight{
+            .container{
+                .row{
+                    .item{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+
+        &#content{
+            height: 230vh;
+
+            .container{
+                width: 100%;
+
+                .row{
+                    &.body{
+                        .grid{
+                            .grid-sizer, .grid-item{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
