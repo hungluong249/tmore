@@ -5,7 +5,7 @@
 
 		<div id="canvas" class="hidden-xs">
 			<div class="mask">
-				<img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9be45969a82da44b4d8a8d6283d3a2a2&auto=format&fit=crop&w=634&q=80" alt="image cover">
+				<img src="<?php echo site_url('assets/img/cover.jpg') ?>" alt="image cover">
 			</div>
 		</div>
 		<svg class="hidden-xs" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -216,7 +216,7 @@
 
 			<div class="item col-md-8 col-xs-12">
 				<div class="mask">
-					<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=89c21e12da5a1c16539ae341645fb184&auto=format&fit=crop&w=1350&q=80" alt="image highlight 01">
+					<img src="<?php echo site_url('assets/img/hl-01.jpg') ?>" alt="image highlight 01">
 
 					<div class="content">
 						<h1 class="big-heading">
@@ -231,7 +231,7 @@
 
 			<div class="item col-md-6 col-xs-12">
 				<div class="mask">
-					<img src="https://images.unsplash.com/photo-1528791914202-a957a59c7534?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7be45755104b70e39ff8e6013a603653&auto=format&fit=crop&w=1351&q=80" alt="image highlight 02">
+					<img src="<?php echo site_url('assets/img/hl-02.jpg') ?>" alt="image highlight 02">
 
 					<div class="content">
 						<h1 class="big-heading">
@@ -246,7 +246,7 @@
 
 			<div class="item col-md-6 col-xs-12">
 				<div class="mask">
-					<img src="https://images.unsplash.com/photo-1529729452430-d35a0213b820?ixlib=rb-0.3.5&s=0b6a987f6413de522ed747a9a7a0bc26&auto=format&fit=crop&w=675&q=80" alt="image highlight 03">
+					<img src="<?php echo site_url('assets/img/hl-03.jpg') ?>" alt="image highlight 03">
 
 					<div class="content">
 						<h1 class="big-heading">
@@ -261,7 +261,7 @@
 
 			<div class="item col-xs-12">
 				<div class="mask">
-					<img src="https://images.unsplash.com/photo-1424591093900-514bab956faf?ixlib=rb-0.3.5&s=bff4ac5b95c67dd32bdc2c15605a3bd9&auto=format&fit=crop&w=1350&q=80" alt="image highlight 04">
+					<img src="<?php echo site_url('assets/img/hl-04.jpg') ?>" alt="image highlight 04">
 
 					<div class="content">
 						<h1 class="big-heading">
@@ -291,27 +291,39 @@
 					$value = array
 					(
 						array (
-							"https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixlib=rb-0.3.5&s=0be0fadd93f717e91273ff6ec3ee1b7c&auto=format&fit=crop&w=634&q=80",
-							"Trà Ô Long",
-							"Cam Đào Dâu Tây"
+							"drink-01.jpg",
+							"Trà sữa",
+							"Trân châu Socola"
 						),
 
 						array (
-							"https://images.unsplash.com/photo-1519955843453-84f23402bbdf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d90d94ea1e8598b2c4a320c888700ba&auto=format&fit=crop&w=1361&q=80",
-							"Hồng Trà",
-							"Kem Matcha"
+							"drink-02.jpg",
+							"DẢI NGÂN HÀ",
+							""
 						),
 
 						array (
-                            "https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixlib=rb-0.3.5&s=0be0fadd93f717e91273ff6ec3ee1b7c&auto=format&fit=crop&w=634&q=80",
+                            "drink-03.jpg",
+                            "Sữa tươi",
+                            "Trân châu đường đen"
+                        ),
+
+                        array (
+                            "drink-04.jpg",
                             "Trà Ô Long",
                             "Cam Đào Dâu Tây"
                         ),
 
+                        array (
+                            "drink-05.jpg",
+                            "Trà Ô Long",
+                            "Dưa Lưới Hoàng Kim Kem Cheese"
+                        ),
+
 						array (
-                            "https://images.unsplash.com/photo-1519955843453-84f23402bbdf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d90d94ea1e8598b2c4a320c888700ba&auto=format&fit=crop&w=1361&q=80",
-                            "Hồng Trà",
-                            "Kem Matcha"
+                            "drink-06.jpg",
+                            "Trà sữa",
+                            "Trân châu Matcha"
                         )
 					)
 				?>
@@ -321,7 +333,7 @@
 					<?php for ($key = 0; $key < count($value); $key++){?>
 					<div class="item">
 						<div class="mask">
-							<img src="<?php echo $value[$key][0] ?>" alt="hot drink 01">
+							<img src="<?php echo site_url('assets/img/drink/' . $value[$key][0] ) ?>" alt="hot drink 01">
 						</div>
 						<div class="content">
 							<p class="paragraph">
@@ -352,27 +364,27 @@
                 $value = array
                 (
                     array (
-                        "https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixlib=rb-0.3.5&s=0be0fadd93f717e91273ff6ec3ee1b7c&auto=format&fit=crop&w=634&q=80",
-                        "Trà Ô Long",
-                        "Cam Đào Dâu Tây"
+                        "tools-01.jpg",
+                        "MÁY ÉP TRÁI CÂY",
+                        "HUROMI"
                     ),
 
                     array (
-                        "https://images.unsplash.com/photo-1519955843453-84f23402bbdf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d90d94ea1e8598b2c4a320c888700ba&auto=format&fit=crop&w=1361&q=80",
-                        "Hồng Trà",
-                        "Kem Matcha"
+                        "tools-02.jpg",
+                        "MÁY ĐẢO TRÀ",
+                        "EBLENDERS"
                     ),
 
                     array (
-                        "https://images.unsplash.com/photo-1506802913710-40e2e66339c9?ixlib=rb-0.3.5&s=0be0fadd93f717e91273ff6ec3ee1b7c&auto=format&fit=crop&w=634&q=80",
-                        "Trà Ô Long",
-                        "Cam Đào Dâu Tây"
+                        "tools-03.jpg",
+                        "MÁY XAY",
+                        "OMI BLEND V"
                     ),
 
                     array (
-                        "https://images.unsplash.com/photo-1519955843453-84f23402bbdf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d90d94ea1e8598b2c4a320c888700ba&auto=format&fit=crop&w=1361&q=80",
-                        "Hồng Trà",
-                        "Kem Matcha"
+                        "tools-04.jpg",
+                        "MÁY ĐÁNH KEM",
+                        "STELANG"
                     )
                 )
                 ?>
@@ -382,7 +394,7 @@
                     <?php for ($key = 0; $key < count($value); $key++){?>
 						<div class="item">
 							<div class="mask">
-								<img src="<?php echo $value[$key][0] ?>" alt="hot drink 01">
+								<img src="<?php echo site_url('assets/img/tools/' . $value[$key][0] ) ?>" alt="tools">
 							</div>
 							<div class="content">
 								<p class="paragraph">
@@ -399,7 +411,7 @@
 	</div>
 </section>
 
-<section class="section" id="content" style="background-image: url('https://images.unsplash.com/photo-1504310578167-435ac09e69f3?ixlib=rb-0.3.5&s=2827d074d27cec8935aab7181204c760&auto=format&fit=crop&w=634&q=80')">
+<section class="section" id="content" style="background-image: url('<?php echo site_url('assets/img/content.jpg') ?>')">
 	<div class="background"></div>
 	<div class="container">
 		<div class="row head">
@@ -450,7 +462,7 @@
 		<div class="row body">
 			<div class="left col-md-6 col-xs-12">
 				<div class="mask">
-					<img src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?ixlib=rb-0.3.5&s=8bcd2fa5ab3473d601f3d3bd2fe1228d&auto=format&fit=crop&w=634&q=80" alt="prive cover">
+					<img src="<?php echo site_url('assets/img/price.jpg') ?>" alt="prive cover">
 				</div>
 			</div>
 
