@@ -61,7 +61,7 @@
 				</div>
 				<div class="right">
 					<h1 class="big-heading">05</h1>
-					<span>Lớp học</span>
+					<span>Buổi học</span>
 				</div>
 			</div>
 
@@ -106,11 +106,7 @@
 					Ưu điểm<br>của học viện
 				</h1>
 			</div>
-			<div class="col-sm-6 col-xs-12">
-				<p class="paragraph">
-					Giáo trình bao gồm hơn 60 công thức pha chế trà sữa, chuẩn menu của các nhãn hàng nổi tiếng hiện nay: The Alley, Heekcaa, Royal Tea, Gongcha,...
-				</p>
-			</div>
+
 		</div>
 
 		<div class="row body">
@@ -132,7 +128,7 @@
 				<div class="item wow fadeInUp" data-wow-delay="0.4s">
 					<img src="<?php echo site_url('assets/img/icon/chef.png') ?>" alt="benefit 03">
 					<p class="paragraph">
-						Tư vấn, chia sẻ phương thức quản lý kinh doanh đồ uống hiệu quả từ kinh nghiệm thực tế.
+						Thực hành không giới hạn thời gian, học viên được làm đến khi thành thạo tay nghề.
 					</p>
 				</div>
 			</div>
@@ -149,10 +145,17 @@
 					</p>
 				</div>
 
-				<div class="item wow fadeInUp" data-wow-delay="0.8 s">
+				<div class="item wow fadeInUp" data-wow-delay="0.8s">
 					<img src="<?php echo site_url('assets/img/icon/promotion.png') ?>" alt="benefit 05">
 					<p class="paragraph">
 						Ưu đãi hấp dẫn khi mua trang thiết bị, máy móc pha chế và nguyên liệu sau khi trở thành học viên của học viện.
+					</p>
+				</div>
+
+				<div class="item wow fadeInUp" data-wow-delay="1.0s">
+					<img src="<?php echo site_url('assets/img/icon/recipe.png') ?>" alt="benefit 05">
+					<p class="paragraph">
+						Giáo trình bao gồm hơn 60 công thức pha chế trà sữa, chuẩn menu của các nhãn hàng nổi tiếng hiện nay: The Alley, Heekcaa, Royal Tea, Gongcha,...
 					</p>
 				</div>
 			</div>
@@ -290,11 +293,11 @@
 				<?php
 					$value = array
 					(
-						array (
-							"drink-01.jpg",
-							"Trà sữa",
-							"Trân châu Socola"
-						),
+//						array (
+//							"drink-01.jpg",
+//							"Trà sữa",
+//							"Trân châu Socola"
+//						),
 
 						array (
 							"drink-02.jpg",
@@ -316,14 +319,14 @@
 
                         array (
                             "drink-05.jpg",
-                            "Trà Ô Long",
-                            "Dưa Lưới Hoàng Kim Kem Cheese"
+                            "Trà Dưa Lưới",
+                            "Hoàng Kim Kem Cheese"
                         ),
 
 						array (
                             "drink-06.jpg",
-                            "Trà sữa",
-                            "Trân châu Matcha"
+                            "Matcha",
+                            "Trân châu đường đen"
                         )
 					)
 				?>
